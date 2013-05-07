@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var path = require('path'),
+	fs   = require('fs'),
+	ls   = require('LiveScript'),
+	lib  = path.join(path.dirname(fs.realpathSync(__filename)), '../src');
+
+require(lib + '/dezoomify');

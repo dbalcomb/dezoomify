@@ -1,0 +1,40 @@
+{
+	"name": "dezoomify",
+	"version": "0.0.1",
+	"author": "Daniel Balcomb <daniel.balcomb@gmail.com>",
+	"description": "Reverse Zoomify",
+	"keywords": [
+		"graphicsmagick",
+		"reverse",
+		"zoomify",
+		"dezoomify"
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://raw.github.com/dbalcomb/dezoomify/master/LICENSE"
+		}
+	],
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"main": "./bin/dezoomify",
+	"bin": {
+		"dezoomify": "./bin/dezoomify"
+	},
+	"preferGlobal": true,
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/dbalcomb/dezoomify.git"
+	},
+	"dependencies": {
+		"LiveScript" : "1.1.1",
+		"prelude-ls" : "0.6.0",
+		"request"    : "2.21.0",
+		"xml2js"     : "0.2.7",
+		"async"      : "0.2.8",
+		"temp"       : "0.5.0",
+		"nomnom"     : "1.6.0",
+		"line-reader": "0.2.3"
+	}
+}
