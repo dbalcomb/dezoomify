@@ -124,9 +124,8 @@ let @ = cli.command 'file'
 				console.log 'Skip: '.magenta + i + ': ' + outp
 				done!
 			else if i >= s and (!l or i <= l)
-				script = path.join path.dirname fs.realpathSync(__filename), './dezoomify'
-				exec "#{script} path #input -o #output", (err, stdout, stderr) ->
-					console.log 
+				script = fs.realpathSync __filename
+				exec "lsc #{script} path #input -o #output", (err, stdout, stderr) ->
 					if err or stderr then console.error 'Error: '.red + i + ': ' + outp
 					else console.log 'Okay: '.green + i + ': ' + outp
 					if end then done false else done!
